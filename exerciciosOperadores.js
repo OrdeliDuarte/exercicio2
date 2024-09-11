@@ -276,8 +276,10 @@ console.log((b18 + c18 + d18) / 3)
 // Depois, converta a string de volta para número usando Number() e exiba o tipo da variável em cada etapa no console.
 
 let lula = 13
-lula.toString()
-Number(lula)
+console.log(typeof lula)
+lula = lula.toString()
+console.log(typeof lula)
+lula = Number(lula)
 console.log(typeof lula)
 
 //20.
@@ -285,7 +287,7 @@ console.log(typeof lula)
 // Calcule o total a receber e verifique se o valor é maior que 500.
 // Exiba a resposta no console.
 
-let horas = 24
+let horas = 24 
 let horasValor = 1
 console.log(horas * horasValor, (horas * horasValor) > 500 )
 
@@ -294,7 +296,7 @@ console.log(horas * horasValor, (horas * horasValor) > 500 )
 // Em seguida, converta esse valor para número e exiba o valor convertido no console.
 
 const souMaromba = false
-let pneumoultramicroscopicossilicovulcanoconiótico = !souMaromba
+let pneumoultramicroscopicossilicovulcanoconiótico = Number(souMaromba)
 console.log(pneumoultramicroscopicossilicovulcanoconiótico)
 
 //22.                                                                                                                                                                                       bolsonaro 
@@ -315,3 +317,13 @@ let a = 22
 let b = 13
 let c = a - b
 console.log(c, c < 0)
+
+console.log("////////////////////////////////////////////////////////  Outro exercício  ////////////////////////////////////////////////////////////////")
+
+let nome = "Ordeli"
+let corFavorita = "Roxo"
+
+console.log("Meu nome é", nome, "e a minha cor favorita é", corFavorita) //método com vírgula
+console.log("Meu nome é " + nome + " e a minha cor favorita é " + corFavorita) //método com contatenação
+console.log(`Meu nome é ${nome} e a minha cor favorita é ${corFavorita}`) //método com template string
+console.log('Meu nome é', nome, 'e a minha cor favorita é', corFavorita) //método com aspas simples
